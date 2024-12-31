@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <!-- Define two groups for your tests -->
+    <test name="Group 1 Tests">
+        <groups>
+            <run>
+                <include name="group1"/>
+            </run>
+        </groups>
+        <classes>
+            <!-- Replace 'your.package.name.ClassName' with your actual class names -->
+            <class name="QKART_TESTNG.Testcase06"/>
+            <class name="QKART_TESTNG.Testcase07"/>
+            <!-- You can add more classes for group1 if needed -->
+        </classes>
+    </test>
+
+    <test name="Group 2 Tests">
+        <groups>
+            <run>
+                <include name="group2"/>
+            </run>
+        </groups>
+        <classes>
+            <!-- Replace 'your.package.name.ClassName' with your actual class names -->
+            <class name="QKART_TESTNG.Testcase08"/>
+            <class name="QKART_TESTNG.Testcase09"/>
+            <!-- You can add more classes for group2 if needed -->
+        </classes>
+    </test>
+
+</suite>
